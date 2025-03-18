@@ -19,8 +19,8 @@ console.log(typeof undefined);//undefined
 console.log(undefined++);//NaN
 
 let arr_1 = [1,2,3,4,5];
-const[a] = arr_1;
-console.log(a);
+const[a1] = arr_1;
+console.log(a1);
 
 console.log("5"*2);  //10
 console.log("11" * "2"); //22
@@ -165,3 +165,140 @@ console.log([]=={});
 console.log([].toString() == {}.toString());
 console.log();
 
+//Delloite 2nd round
+const str5 = "abc" + + "def";
+console.log(str5);
+
+//Capgemini 2nd round Interview
+let newList = [1].push(2);//push returns length of an array
+console.log(newList.push(3));//TypeError
+
+//Interview Question
+if([]){
+    console.log("Star");//"Star"
+}
+if([] == true){
+    console.log("Star");
+} else {
+    console.log("Moon"); //"Moon"
+}
+
+const numbers1 = [1,2,3];
+numbers1[10] = 11;
+console.log(numbers1);
+
+let y = (12,34,78);
+console.log(y);
+
+
+//Infosys 1st Round
+console.log(data2());
+var data2 = function() {
+    return "1"; //undefined(); -> Type error 
+}
+
+//EPAM 2nd round Interview
+let aobj = {
+    a : undefined,
+    b : null
+}
+console.log(JSON.stringify(aobj));
+
+
+//HCL 2nd Round Interview
+console.log(true + 1); //2
+console.log(true + "1"); //true1
+
+//IBM 2nd round of an Interview
+// Javascript will create one object with value "Dada" but due to no reference it will be destroyed till line 2nd, now on 3red line javascript will again create one object and tries to access data property but since it has no value it will log undefined.
+const str6 = "Nomoshkar";
+str6.data = "Dada";
+console.log(str6.data);//undefined
+
+//Mindtree 2nd round Interview
+const strn = "Aasun";
+const strn2 = new String("Aasun");
+console.log(strn == strn2); //true
+console.log(strn === strn2); //false
+
+//publicis Sapient Interview Question
+console.log(Boolean({}));//true
+console.log(Boolean([]));//true
+console.log(Boolean(""));//true
+console.log(Boolean(new Boolean(false)));//new Boolean will always return object and Boolean({}) is true.
+
+//tcs 1st round Interview
+console.log([] == ![]); // "" == false -> true
+
+//Tech Mahindra 2nd round Interview
+console.log([] == 0); //true
+console.log([0] == [0]); //false
+
+//Mindtree 2nd Round Interview Questions
+const x1 = "he".split(',');
+const y1 = ["h", "e"];
+console.log(x1 === y1); //Compare by reference -> false
+
+//tcs 2nd round Interview
+let x2 = "5";
+let y2 = true;
+console.log(x2 - y2); //4
+
+//Capgemini 2nd round Interview
+console.log(+true);//1
+console.log(+false);//0
+console.log(+"123");//123
+console.log(+null);//0
+
+//Mindtree 2nd round Interview
+setTimeout(() => {
+    console.log("timeout 1");
+},0);
+Promise.resolve().then(() => {
+    console.log("Promise 1");
+});
+
+//EPAM 2nd round Interview
+console.log("1");
+setTimeout(() => {
+    console.log("2");
+}, 0);
+console.log("3"); //1 3 2
+
+//tcs Interviews
+console.log(!!{}); //true
+console.log(!![]); //true
+
+//Most asked Interview Question
+let arr4 = [1,2];
+for(var i = 0; i < arr4.length; i++){
+    setTimeout(() => {
+        console.log(i); // 2 2
+    },[1000]);
+}
+
+//HCL technologies
+const x = "10";
+console.log(x++);// post increment -> 10
+
+//IBM 2nd round Interview Questions
+//in operator in object is used to check key present in object or not and if used in array it checks index is present or not.
+const arr7 = [1,2,3,4];
+console.log(1 in arr7); // true
+console.log(2 in arr7); // true
+console.log(4 in arr7); // false
+
+//tcs 1st Round Interview Question
+let ab = "8";
+let sb = 1;
+console.log(+ab+sb+1) //10
+
+let lx = 1;
+lx = lx++;
+console.log(lx); //1
+
+//Asked in Zepto interview
+const appy = { valueOf: () => 2};
+console.log(2==2); //true
+console.log(2+3);  //5
+console.log(2>1);  //true
